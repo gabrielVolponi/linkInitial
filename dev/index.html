@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilo.css" />
+
+    <title>Login</title>
+</head>
+
+<body>
+    <div id="titulo">
+        <h1 data-cy="tituloLogin">Login Sistema Tester</h1>
+        <h4><em data-cy="subtituloLogin">Faça login com suas credenciais</em></h4>
+        <br><br>
+
+    </div>
+
+    <div id="fundo-branco">
+        <form>
+            <fieldset class="grupo">
+                <div class="campo">
+                    <label for="nome"><strong data-cy="nomeTexto">Nome</strong></label>
+                    <input type="text" name="nome" id="nome" data-cy="inputNome" required /><br><br><br>
+
+                </div>
+
+                <div class="campo">
+                    <label for="sobrenome"><strong data-cy="sobrenomeTexto">Sobrenome</strong></label>
+                    <input type="text" name="sobrenome" id="sobrenome" data-cy="inputSobreNome" required /><br><br><br>
+                </div>
+            </fieldset>
+
+            <div class="campo">
+                <label for="email"><strong data-cy="emailTexto">Email</strong></label>
+                <input type="email" name="email" id="email" data-cy="inputEmail" required /><br><br><br>
+            </div>
+
+            <div class="campo">
+                <label><strong data-cy="perguntaLinguagens">De qual lado da aplicação você automatiza?</strong>
+
+                </label>
+                <label data-cy="textoCypress">
+                    <input type="radio" name="devweb" data-cy="radioCypress" value="frontend" checked />Cypress.io
+                </label>
+
+                <label data-cy="textoAppium">
+                    <input type="radio" name="devweb" data-cy="radioAppium" value="backend" />Appium
+                </label>
+
+                <label data-cy="textoSelenium">
+                    <input type="radio" name="devweb" data-cy="radioSelenium" value="fullstack" />Selenium
+                </label>
+
+                <label data-cy="Fullstack">
+                    <input type="radio" name="devweb" data-cy="radioFullstack" value="fullstack" />Fullstack
+                </label>
+            </div>
+
+            <button type="submit" class="botao" data-cy="botaoConcluir">Concluído</button>
+
+        </form>
+
+</body>
+
+</html>
