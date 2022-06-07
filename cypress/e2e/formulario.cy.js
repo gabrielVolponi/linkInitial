@@ -1,4 +1,5 @@
 const faker = require('faker-br');
+// const { it } = require('faker-br/lib/locales');
 
 describe('Form Basic filled', () => {
   beforeEach('', () => {
@@ -251,7 +252,5 @@ describe('Form Basic filled', () => {
   });
 
 
-
-
-
 });
+
